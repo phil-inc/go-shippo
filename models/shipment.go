@@ -41,7 +41,7 @@ const (
 type ShipmentInput struct {
 	AddressFrom        interface{}    `json:"address_from"`                  // string or *AddressInput
 	AddressTo          interface{}    `json:"address_to"`                    // string or *AddressInput
-	Parcels            interface{}    `json:"parcels"`                       // string, []string, *ParcelInput, or []*ParcelInput
+	Parcels            interface{}    `json:"parcel"`                        // string, []string, *ParcelInput, or []*ParcelInput
 	AddressReturn      interface{}    `json:"address_return,omitempty"`      // string or *AddressInput
 	CustomsDeclaration interface{}    `json:"customs_declaration,omitempty"` // string or *CustomsDeclarationInput
 	ShipmentDate       time.Time      `json:"shipment_date,omitempty"`
