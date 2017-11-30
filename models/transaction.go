@@ -2,14 +2,13 @@ package models
 
 // See https://goshippo.com/docs/reference#transactions
 type TransactionInput struct {
-	Rate          string `json:"rate,omitempty"`
-	Metadata      string `json:"metadata,omitempty"`
-	LabelFileType string `json:"label_file_type"`
-	Async         bool   `json:"async"`
-
-	Shipment         *ShipmentInput `json:"shipment,omitempty"`              // instant call only: https://goshippo.com/docs/reference#transactions-create-instant
-	CarrierAccount   string         `json:"carrier_account,omitempty"`       // instant call only: https://goshippo.com/docs/reference#transactions-create-instant
-	ServerLevelToken string         `json:"servericelevel_token, omitempty"` // instant call only: https://goshippo.com/docs/reference#transactions-create-instant
+	Rate             string         `json:"rate,omitempty"`
+	Metadata         string         `json:"metadata,omitempty"`
+	LabelFileType    string         `json:"label_file_type"`
+	Async            bool           `json:"async"`
+	Shipment         *ShipmentInput `json:"shipment,omitempty"`            // instant call only: https://goshippo.com/docs/reference#transactions-create-instant
+	CarrierAccount   string         `json:"carrier_account,omitempty"`     // instant call only: https://goshippo.com/docs/reference#transactions-create-instant
+	ServerLevelToken string         `json:"servicelevel_token, omitempty"` // instant call only: https://goshippo.com/docs/reference#transactions-create-instant
 }
 
 // See https://goshippo.com/docs/reference#transactions
