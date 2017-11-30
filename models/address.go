@@ -23,6 +23,7 @@ type AddressInput struct {
 	IsResidential bool   `json:"is_residential"`
 	Validate      bool   `json:"validate"`
 	Metadata      string `json:"metadata,omitempty"`
+	Purpose       string `json:"object_purpose"`
 }
 
 // See https://goshippo.com/docs/reference#addresses

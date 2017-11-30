@@ -49,6 +49,8 @@ type ShipmentInput struct {
 	Metadata           string         `json:"metadata,omitempty"`
 	Extra              *ShipmentExtra `json:"extra,omitempty"`
 	Async              bool           `json:"async"`
+	Purpose            string         `json:"object_purpose"`
+	SubmissionType     string         `json:"submission_type"`
 }
 
 type ShipmentExtra struct {
